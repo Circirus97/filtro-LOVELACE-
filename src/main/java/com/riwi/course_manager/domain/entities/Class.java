@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity(name = "classes")
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 @NoArgsConstructor
 public class Class {
 
@@ -30,5 +30,10 @@ public class Class {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     private List<Student> students;
+
+    @OneToMany(mappedBy = "classEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = false)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private List<Lesson> lessons;
 
 }
