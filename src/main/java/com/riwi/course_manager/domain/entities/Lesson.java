@@ -23,7 +23,7 @@ public class Lesson {
 
     private LocalDateTime created_at = LocalDateTime.now();
 
-    private Boolean active;
+    private Boolean isActive = true;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "classId", referencedColumnName = "id")

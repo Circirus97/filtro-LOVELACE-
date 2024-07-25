@@ -26,7 +26,7 @@ public class Multimedia {
 
     private LocalDateTime created_at = LocalDateTime.now();
 
-    private Boolean active;
+    private Boolean isActive = true;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "lessonId", referencedColumnName = "id")

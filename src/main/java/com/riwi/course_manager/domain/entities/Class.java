@@ -24,7 +24,7 @@ public class Class {
 
     private LocalDateTime created_at = LocalDateTime.now();
 
-    private Boolean active;
+    private Boolean isActive = true;
 
     @OneToMany(mappedBy = "classEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = false)
     @ToString.Exclude
