@@ -22,7 +22,7 @@ public class Class {
     @Lob
     private String description;
 
-    private LocalDateTime created_at = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     private Boolean isActive = true;
 

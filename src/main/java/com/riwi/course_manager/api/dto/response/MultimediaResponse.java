@@ -17,6 +17,6 @@ public class MultimediaResponse {
     private Long id;
     private Type type;
     private String url;
-    private LocalDateTime created_at;
+    private LocalDateTime createdAt;
     private Boolean isActive;
 }

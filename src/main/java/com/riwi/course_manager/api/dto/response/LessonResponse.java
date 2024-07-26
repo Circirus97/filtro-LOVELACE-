@@ -16,6 +16,6 @@ public class LessonResponse {
     private Long id;
     private String title;
     private String content;
-    private LocalDateTime created_at;
+    private LocalDateTime createdAt;
     private Boolean isActive;
 }

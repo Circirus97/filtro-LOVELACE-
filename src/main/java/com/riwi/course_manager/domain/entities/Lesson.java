@@ -21,7 +21,7 @@ public class Lesson {
     @Lob
     private String content;
 
-    private LocalDateTime created_at = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     private Boolean isActive = true;
 

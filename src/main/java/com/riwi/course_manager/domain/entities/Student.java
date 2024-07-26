@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -24,7 +23,7 @@ public class Student {
     @Column(nullable = false)
     private String email;
 
-    private LocalDateTime created_at = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
     private Boolean isActive = true;
 

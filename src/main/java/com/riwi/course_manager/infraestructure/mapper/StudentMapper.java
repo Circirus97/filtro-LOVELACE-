@@ -11,6 +11,8 @@ public interface StudentMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "classEntity", ignore = true)
+    @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "isActive", ignore = true)
     Student studentRequestToStudent(StudentRequest request);
 
     StudentResponse studentToStudentResponse(Student student);
