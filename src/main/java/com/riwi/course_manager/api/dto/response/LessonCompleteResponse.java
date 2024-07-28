@@ -12,12 +12,13 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LessonResponse {
+public class LessonCompleteResponse {
 
     private Long id;
     private String title;
     private String content;
     private LocalDateTime createdAt;
     private Boolean isActive;
+    private Long classId;
     private List<MultimediaResponse> multimediaResponse;
 }

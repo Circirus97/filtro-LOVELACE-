@@ -104,7 +104,7 @@ public class StudentController{
 
     /*
     ----------------------
-      UPDATE ROLE
+      UPDATE STUDENT
     ---------------------
      */
     // SWAGGER
