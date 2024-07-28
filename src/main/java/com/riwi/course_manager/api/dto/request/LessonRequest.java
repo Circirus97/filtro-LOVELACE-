@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 
 @Builder
 @Data
@@ -22,4 +24,7 @@ public class LessonRequest {
 
     @NotNull(message = "The class ID is required")
     private Long classId;
+
+    private List<MultimediaRequest> multimediaRequests;
+
 }

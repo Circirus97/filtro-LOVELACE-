@@ -13,8 +13,8 @@ public interface MultimediaMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "isActive", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
-    @Mapping(target = "lesson", ignore = true)
-    Multimedia multimdediaRequestToMultimedia(MultimediaRequest request);
+    @Mapping(target = "lesson.id", source = "lessonId")
+    Multimedia multimdediaRequestToMultimedia(MultimediaRequest request, Long lessonId);
 
     MultimediaResponse multimediaToMultimediaResponse(Multimedia multimedia);
 

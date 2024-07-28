@@ -6,18 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class LessonResponse {
+public class StudentAllInfoResponse {
 
     private Long id;
-    private String title;
-    private String content;
+    private String name;
+    private String email;
     private LocalDateTime createdAt;
     private Boolean isActive;
-    private List<MultimediaResponse> multimediaResponse;
+    private ClassResponse classEntity;
+
 }

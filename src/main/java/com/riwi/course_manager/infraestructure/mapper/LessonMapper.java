@@ -4,9 +4,12 @@ package com.riwi.course_manager.infraestructure.mapper;
 
 import com.riwi.course_manager.api.dto.request.LessonRequest;
 import com.riwi.course_manager.api.dto.response.LessonResponse;
+import com.riwi.course_manager.api.dto.response.MultimediaResponse;
 import com.riwi.course_manager.domain.entities.Lesson;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+
+import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface LessonMapper {
@@ -18,6 +21,6 @@ public interface LessonMapper {
     @Mapping(target = "classEntity", ignore = true)
     Lesson lessonRequestToLesson(LessonRequest request);
 
-    LessonResponse lessonToLessonResponse(Lesson lesson);
+    LessonResponse lessonToLessonResponse(Lesson lesson, List<MultimediaResponse> multimediaResponse);
 
 }
